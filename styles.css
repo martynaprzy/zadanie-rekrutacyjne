@@ -1,0 +1,199 @@
+body, html {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+p.header, img#linkedin, img#facebook {
+    display: inline;
+}
+
+img#linkedin, img#facebook {
+    float: right;
+}
+
+div.link-tab {
+   padding: 2em;
+}
+
+span.link {
+    font-weight: bold;
+}
+
+div.title-box {
+    height: auto;
+    background-image: url("imgBg.jpg");
+    background-size: cover;
+    color: white;
+    padding: 8em 4em;
+}
+
+span#title {
+    font-weight: lighter;
+    display: block;
+}
+
+div.title-box p {
+    float: right;
+}
+
+div.more-info {
+    /*margin: 0;*/
+    background-image: url("bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.more-info p {
+    margin: 0 auto;
+    padding: 1.5em;
+    text-align: center;
+}
+
+div.more-info hr {
+    width: 30%;
+    border-color: red;
+}
+
+div.more-info button {
+    width: 40%;
+    margin: 20px auto;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+div.lecturers {
+
+}
+
+h2 {
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+}
+
+div.lecturers hr {
+    border-color: red;
+    width: 30%;
+}
+
+div.people-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.4em 0;
+}
+
+div.person {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.person h4 {
+    font-weight: bold;
+
+}
+
+.footer-content {
+    display: flex;
+    padding: 0;
+    color: white;
+    background-color: midnightblue;
+}
+
+.footer-content h2 {
+    padding: 1.4em 0;
+    text-align: left;
+}
+
+.footer-content img {
+    margin-right: 4em;
+}
+
+div#link-tab {
+    padding: 2em;
+    text-align: center;
+}
+
+span#link {
+    font-weight: bold;
+}
+
+/*media queries*/
+
+@media (max-width:940px) {
+    div.people-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.person {
+        padding: 0.5em;
+    }
+}
+
+@media (max-width:680px) {
+    div.footer-content img {
+        margin-right: 2em;
+    }
+    div.footer-content h2 {
+        padding: 1em 0;
+    }
+}
+
+@media (max-width:620px) {
+    div.link-tab {
+        padding: 1em;
+    }
+    div.people-box {
+        padding: 0;
+        margin-bottom: 1em;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    div.people-box img {
+        width: 70%;
+    }
+    div.person {
+        width: 70%;
+    }
+    div.footer-content img {
+        width: 40%;
+        height: 50%;
+    }
+    div.footer-content p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:550px) {
+    p.header, img#linkedin, img#facebook {
+        display: block;
+    }
+    div.link-tab {
+        padding: 1.4em;
+        height: auto;
+        position: relative;
+        font-size: 0.8em;
+    }
+    div.link-tab img {
+        position: relative;
+        top: -1em;
+    }
+    div.title-box {
+        padding: 3em;
+    }
+    div#link-tab {
+        font-size: 0.8em;
+    }
+    div.footer-content img {
+        width: 20%;
+    }
+    div.footer-content h2 {
+        padding: 0;
+    }
+}
